@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* @font-face {
+    font-family: Inter;
+    src: url(https://fonts.google.com/specimen/Inter);
+} */
+*{
+    font-family: 'Inter';
+
+}
+
+body {
+    background: hsl(233, 47%, 7%);
+    display: grid;
+    place-items: center;
+    margin: 0;
+
+}
+
+.attribution {
+    font-size: 1rem;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    margin: 100; 
+    padding: auto;
+   
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.card {
+    font-size: 15px;
+    background: hsl(244, 38%, 16%);
+    box-shadow: 0 3px rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;/* จัดตำแหน่งของ flex items ตามแนวนอน */
+    align-items: center;
+    position: fixed;
+    width: 65%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+
+.text {
+    color: hsl(0, 0%, 100%);
+    flex: 2; /*เพิ่มเพื่อให้ขยาย text เต็มพื้นที่ */
+    flex-basis: 50%;
+    padding: 1rem;
+    padding-left: 5%;
+    
+    
+}
+
+.text .paragraph{
+    color: hsla(0, 0%, 100%, 0.75);
+    padding-left: 5%;
+    padding: 0.2rem;
+}
+
+.stat-headings{
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    /* padding-left: 7.5%; */
+
+
+}
+
+.stat-headings .stat-text{
+
+    color: hsla(0, 0%, 100%, 0.6);
+    margin-top: 0.5rem;
+    padding-left: 1%;
+    font-size: 13px;
+  
+}
+
+
+.card-imges {
+    display: grid;
+    justify-content: center;/* จัดตำแหน่งของ flex items ตามแนวนอน */
+    align-items: center;/* จัดตำแหน่งของ flex items ตามแนวตั้ง */
+    flex-basis: 50%;
+
+}
+
+.card-imges img {
+    max-width: 100%;
+    height: auto;
+    filter: brightness(277, 64%, 61%);
+    
+
+}
+
+.insights {
+    color: hsl(277, 64%, 61%);
+}
+
+@media  (max-width: 760px) {
+    /* body {
+        background-color: lightgreen;
+    } */
+    .card {
+        flex-direction: column;
+        width: 100%;
+        max-width: 45%;
+        
+    }
+
+    .text {
+        font-size: 0.75rem;
+        text-align: center;
+    }
+    .stat-headings {
+        flex-direction: column;
+
+    }
+    .stat-headings h3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
